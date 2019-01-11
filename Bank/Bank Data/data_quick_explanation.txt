@@ -1,0 +1,21 @@
+mcc_cat numeric - Merchant Category Code (grouped in 33 categories but kept as numeric variable)
+mcc_ant_cat numeric - Merchant Category Code from previous transaction of the same credit card (grouped in 33 categories but kept as numeric variable)
+cep_cat numeric - Post/zip code (grouped in 10 categories but kept as numeric variable)
+cep_ant_cat numeric -  Post/zip code from previous transaction (grouped in 10 categories but kept as numeric variable)
+valor_trans_cat numeric - Ammount of money of the current transaction (grouped in 10 categories but kept as numeric variable)
+valor_trans_ant_cat numeric - Ammount of money of the previou transaction (grouped in 10 categories but kept as numeric variable)
+pos_entry numeric - Type of transaction - Card present (Normal transaction), Internet, Telephone, direct debit, etc. (grouped in 10 categories but kept as numeric variable)
+lim_cred_cat numeric - Credit limit of the account (grouped in 10 categories but kept as numeric variable)
+bandeira_cat numeric - Brand/scheme - Visa, MasterCard, Diners, JCB, etc. (grouped in 6 categories but kept as numeric variable)
+variante_cat numeric - Variant - Local, International, Gold, Platinum (grouped in 6 categories but kept as numeric variable)
+score_cat numeric - Fraud score of the previous transaction (this is really - really important to know)
+tp_pessoa_cat numeric - VIP or Common.
+trans_nacional_cat numeric - Local or Interantional transaction? (grouped in 2 categories but kept as numeric variable)
+qtde_parc_cat numeric - Number of instalments of the current transaction (grouped in 4 categories but kept as numeric variable)
+velocidade_cat numeric - Time in minutes since the last transaction (grouped in 6 categories but kept as numeric variable)
+dif_score_cat numeric - Diference between the fraud score of the current previous transaction and fraud score from the one before. (grouped in 6 categories but kept as numeric variable)
+trans_limit_cat numeric - Merchant transaction limit, maximum amount of money allowed for a transaction in that specific type of business (grouped in 9 categories but kept as numeric variable)
+flag_fraude_cat {N,S} - Fraud transaction flag (N = No fraud / S = Yes Fraud) 
+
+
+Please have a look at the paper "Credit Card Fraud Detection with Artificial Immune System" for more details about the categorization (grouping) process.
